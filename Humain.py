@@ -2,13 +2,9 @@ from Bipède import Bipede
 
 
 class Humain(Bipede):
-    def __init__(self, energie, food, type_bipede):
-        super().__init__(type_bipede)
-        self.enrgie = energie
+    def __init__(self, energie, food, nom, origine):
+        super().__init__(nom, origine, energie)
         self.food = food
-
-    def get_energie(self):
-        pass
 
     def get_food(self):
         pass

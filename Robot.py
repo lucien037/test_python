@@ -2,13 +2,15 @@ from Bipède import Bipede
 
 
 class Robot(Bipede):
-    def __init__(self, energie, instruction, type_bipede):
-        super().__init__(type_bipede)
+    def __init__(self, energie, nom, prix, origine):
+        super().__init__(nom, origine, energie)
         self.energie = energie
-        self.instruction = instruction
+        self.marque = "OpenIA"
+        self.matiere = "Titane"
+        self.prix = prix
 
-    def get_energie(self):
+    def set_energie(self, energie):
         pass
 
-    def set_energie(self,energie):
+    def execute_instruction(self, instruction):
         pass
