@@ -1,8 +1,9 @@
-class Bipède:
+class Bipede:
 
     def __init__(self, type_bipede):
         self.nbJambes = 2
         self.typebipede = type_bipede
+
     def getter_nbJambes(self):
         pass
 
